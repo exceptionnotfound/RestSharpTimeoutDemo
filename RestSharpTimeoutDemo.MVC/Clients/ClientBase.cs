@@ -39,7 +39,8 @@ namespace RestSharpTimeoutDemo.MVC.Clients
         {
             if (response.StatusCode == 0)
             {
-                throw new TimeoutException("The request timed out!");
+                //Uncomment the line below to throw a real exception.
+                //throw new TimeoutException("The request timed out!");
             }
         }
     }
