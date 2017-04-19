@@ -1,0 +1,14 @@
+﻿@model RestSharpTimeoutDemo.MVC.ViewModels.Home.HomeIndexVM
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@if (Model.CurrentDate.HasValue)
+{
+    <h1>The current date/time is @Model.CurrentDate</h1>
+}
+else
+{
+    <h1>The request timed out!</h1>
+}
